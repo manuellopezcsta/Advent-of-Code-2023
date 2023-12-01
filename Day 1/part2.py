@@ -14,7 +14,8 @@ def DecodeLine(line):
 
     # Dejamos todo en texto
     for key in typedNumbers.keys():
-        line = line.replace(typedNumbers[key], key)
+        line = line.replace(typedNumbers[key], " "+key) # Agregamos un espacio para que no pase el caso
+        # ejemplo de tw1nine, q seria 19, pero sin ese espacio seria 219 y se rompe todo.
     #print(line)
 
     # Buscamos el texto y sacamos las palabras. Importante el usar starts with y no contain. para
@@ -54,7 +55,6 @@ for n in numbers:
     results.append(BuildNumber(n))
 
 SumAllCoords(results)
-
 
 
 

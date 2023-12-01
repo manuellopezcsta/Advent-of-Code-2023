@@ -21,7 +21,7 @@ def DecodeLine(line):
 
 def BuildNumber(numberString):
     output = "" + numberString[0] + numberString[-1] # -1 is last char
-    print("Result number is : " + output);
+    print("Result number is : " + output)
     return output
 
 def SumAllCoords(numbers):
