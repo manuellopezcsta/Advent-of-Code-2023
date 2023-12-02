@@ -1,7 +1,3 @@
-import re
-
-
-
 def OpenFile(dayN):
     print('Leyendo Datos')
     with open('Day ' + str(dayN) + '/input.txt') as f:
