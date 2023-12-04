@@ -21,3 +21,9 @@ def Build2DMap(list):
             print(str(x) + " " + str(y))
             dic[(x,y)] = list[y][x]
     return dic
+
+# For removing repeats of an item from a list, for example spaces..
+def remove_items(list, items): 
+    # using list comprehension to perform the task
+    output = [i for i in list if i not in items]
+    return output 
