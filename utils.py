@@ -27,3 +27,6 @@ def remove_items(list, items):
     # using list comprehension to perform the task
     output = [i for i in list if i not in items]
     return output 
+
+def clamp(n, smallest, largest):
+    return max(smallest, min(n, largest)) 
